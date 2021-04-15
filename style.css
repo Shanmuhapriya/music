@@ -1,0 +1,137 @@
+/*.logo{
+    max-width: 100px;
+    max-height: 100px;
+}
+.navbar{
+    background-color: grey;
+    border-radius: 10px;
+}*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+.app-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.player{
+    background-color: rgb(214, 205, 228);
+    padding: 50px 50px;
+    width:414px;
+    max-width: 100%;
+    border-radius: 16px;
+    box-shadow: 0px 3px 12px rgba(0,0,0,0.1);
+}
+
+.song-img{
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    background-color: rebeccapurple;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0px 3px 12px rgba(0,0,0,0.3);
+    max-width: 100%;
+    margin-bottom: 50px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('./kadalalle.jpg');
+}
+
+.song-img:after{
+    content: '';
+    padding-top: 100%;
+    display: block;
+}
+
+.song-img::before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    right: -20px;
+    bottom: -20px;
+    border: 2px solid #EEE;
+    border-radius: 50%;
+}
+
+.song-details{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.song-details h2{
+    font-size: 24px;
+    font-weight:600;
+    color:rgb(4, 63, 63);
+    margin-bottom: 5px;
+}
+
+.song-details h3{
+    font-size: 16px;
+    font-weight: 550;
+    color: darkslateblue;
+}
+.player-controls{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.player-controls #play-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75px;
+    height: 75px;
+    border-radius: 50px;
+    background-color: darkturquoise;
+    color: #FFF;
+    border: none;
+    outline: none;
+    appearance: none;
+    cursor: pointer;
+    margin: 0px 30px;
+    box-shadow: 0px 6px 12px rgba(147, 235, 236, 0.6);
+    transition: 0.4s;
+}
+.player-controls #play-btn:hover{
+    box-shadow: 0px 8px 16px rgba(147, 235, 236, 0.8);
+}
+.player-controls .skip-btn{
+    background: none;
+    border: none;
+    outline: none;
+    appearance: none;
+    cursor: pointer;
+    color: rgb(117, 114, 114);
+    transition: 0.4s;
+}
+.player-controls .skip-btn:hover{
+    color: rgb(44, 42, 42);
+}
+.next-up p{
+    color: #888;
+    text-align: center;
+    font-weight: 500;
+    font-size: 14px;
+}
+.next-up p span{
+    font-weight: 400;
+    font-style: italic;
+}
+@media(max-width: 414px){
+    .player{
+        min-height: 100vh;
+        border-radius: 0px;
+        padding: 75px 30px;
+    }
+}
